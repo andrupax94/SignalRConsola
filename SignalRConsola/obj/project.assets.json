@@ -4890,22 +4890,22 @@
   },
   "packageFolders": {
     "C:\\Users\\ed449\\.nuget\\packages\\": {},
-    "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MAUI\\repos\\SignalRConsola\\SignalRConsola\\SignalRConsola.csproj",
+      "projectUniqueName": "C:\\.NET\\SignalRConsola\\SignalRConsola\\SignalRConsola.csproj",
       "projectName": "SignalRConsola",
-      "projectPath": "E:\\MAUI\\repos\\SignalRConsola\\SignalRConsola\\SignalRConsola.csproj",
+      "projectPath": "C:\\.NET\\SignalRConsola\\SignalRConsola\\SignalRConsola.csproj",
       "packagesPath": "C:\\Users\\ed449\\.nuget\\packages\\",
-      "outputPath": "E:\\MAUI\\repos\\SignalRConsola\\SignalRConsola\\obj\\",
+      "outputPath": "C:\\.NET\\SignalRConsola\\SignalRConsola\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "E:\\Users\\ed449\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ed449\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
