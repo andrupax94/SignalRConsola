@@ -297,3 +297,12 @@ E:\MAUI\repos\SignalRConsola\SignalRConsola\bin\Debug\net8.0\runtimes\osx-arm64\
 E:\MAUI\repos\SignalRConsola\SignalRConsola\bin\Debug\net8.0\runtimes\osx-x64\native\IronPdfInterop.dylib
 E:\MAUI\repos\SignalRConsola\SignalRConsola\bin\Debug\net8.0\runtimes\win-x64\native\IronPdfInterop.dll
 E:\MAUI\repos\SignalRConsola\SignalRConsola\bin\Debug\net8.0\runtimes\win-x86\native\IronPdfInterop.dll
+C:\.NET\SignalRConsola\SignalRConsola\obj\Debug\net8.0\SignalRConsola.csproj.AssemblyReference.cache
+C:\.NET\SignalRConsola\SignalRConsola\obj\Debug\net8.0\SignalRConsola.GeneratedMSBuildEditorConfig.editorconfig
+C:\.NET\SignalRConsola\SignalRConsola\obj\Debug\net8.0\SignalRConsola.AssemblyInfoInputs.cache
+C:\.NET\SignalRConsola\SignalRConsola\obj\Debug\net8.0\SignalRConsola.AssemblyInfo.cs
+C:\.NET\SignalRConsola\SignalRConsola\obj\Debug\net8.0\SignalRConsola.csproj.CoreCompileInputs.cache
+C:\.NET\SignalRConsola\SignalRConsola\obj\Debug\net8.0\SignalRConsola.sourcelink.json
+C:\.NET\SignalRConsola\SignalRConsola\obj\Debug\net8.0\SignalRConsola.dll
+C:\.NET\SignalRConsola\SignalRConsola\obj\Debug\net8.0\refint\SignalRConsola.dll
+C:\.NET\SignalRConsola\SignalRConsola\obj\Debug\net8.0\SignalRConsola.pdb

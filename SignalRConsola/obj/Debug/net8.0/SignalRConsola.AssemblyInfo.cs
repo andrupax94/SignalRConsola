@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SignalRConsola")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0db1cfff3edc085d7409792141b2f761c4f30cea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a73311169a9de7834e0e1f98347361084650e1fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("SignalRConsola")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SignalRConsola")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
