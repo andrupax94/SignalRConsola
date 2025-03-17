@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "SignalRConsola": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "GUID": "b3088804-e694-4a45-bf1f-895ae146ea33",
+        
+      }
+    }
+  }
+}
