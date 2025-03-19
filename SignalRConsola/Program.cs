@@ -48,7 +48,7 @@ class Program
 
         //HuellaManager huellaManager = new HuellaManager();
 
-        Datos.Instance.CambiarIdioma("es-ES");
+        Configuracion.Instance.CambiarIdioma("es-ES");
         bool continuar = true;
         while (continuar)
         {

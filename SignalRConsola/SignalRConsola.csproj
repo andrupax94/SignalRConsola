@@ -46,7 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ControlDeHuellaSol">
+    <Reference Include="ControlDeHuellasSol">
       <HintPath>..\ControlDeHuellasSol\bin\Debug\net8.0\ControlDeHuellasSol.dll</HintPath>
     </Reference>
   </ItemGroup>
