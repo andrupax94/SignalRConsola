@@ -10,7 +10,7 @@
 
 
   <ItemGroup>
-    <PackageReference Include="ControlAccesoHuellaSol" Version="1.0.0" />
+ 
     <PackageReference Include="IronPdf" Version="2025.3.6" />
     <PackageReference Include="IronPrint" Version="2025.3.5" />
     <PackageReference Include="linq2db.SQLite" Version="5.4.1" />
@@ -33,13 +33,12 @@
     <ProjectReference Include="..\DatosConexion\DatosConexionHaendel.csproj" />
   </ItemGroup>
 
- 
 
   <ItemGroup>
     <Reference Include="misFunciones">
       <HintPath>..\misFunciones\misFunciones\bin\Debug\net8.0\misFunciones.dll</HintPath>
     </Reference>
-   
+
   </ItemGroup>
   <ItemGroup>
     <Reference Include="DatosConexion">
@@ -47,8 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ControlAccesoHuellaSol">
-      <HintPath>..\ControlAccesoHuellaSol\bin\Debug\net8.0\DatosConexionHaendel.dll</HintPath>
+    <Reference Include="ControlDeHuellaSol">
+      <HintPath>..\ControlDeHuellasSol\bin\Debug\net8.0\ControlDeHuellasSol.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

@@ -13,8 +13,8 @@ using Newtonsoft.Json;
 using SignalRConsola.modules.hash;
 using SignalRConsola.modules.settings;
 using SignalRConsola.modules.signalR;
-using ControlAccesoHuellaSol;
-using Datos = DatosConexionHaendel.LocalizacionService;
+using Huellas = ControlDeHuellaSol.HuellaManager;
+using Configuracion = DatosConexionHaendel.LocalizacionService;
 class Program
 {
 
