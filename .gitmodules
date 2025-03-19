@@ -7,3 +7,6 @@
 [submodule "ControlAccesoHuellaSol"]
 	path = ControlAccesoHuellaSol
 	url = https://github.com/SolangeFaria/ControlAccesoHuellaSol.git
+[submodule "ControlDeHuellasSol"]
+	path = ControlDeHuellasSol
+	url = https://github.com/SolangeFaria/ControlDeHuellasSol.git
