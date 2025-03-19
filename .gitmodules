@@ -1,3 +1,9 @@
 [submodule "misFunciones"]
 	path = misFunciones
 	url = https://github.com/andrupax94/misFunciones.git
+[submodule "DatosConexion"]
+	path = DatosConexion
+	url = https://github.com/SirLuxord/DatosConexion.git
+[submodule "ControlAccesoHuellaSol"]
+	path = ControlAccesoHuellaSol
+	url = https://github.com/SolangeFaria/ControlAccesoHuellaSol.git
