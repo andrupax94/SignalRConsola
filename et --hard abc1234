@@ -1,0 +1,19 @@
+[33mbe3a680[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD~3
+[33m073a557[m HEAD@{1}: commit: Aplicando nuevas reglas de .gitignore
+[33mf0d8de1[m HEAD@{2}: commit (merge): Merge branch 'main' of https://github.com/andrupax94/SignalRCons
+[33m9e0c209[m HEAD@{3}: commit: dfgdfg
+[33mbe3a680[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{4}: reset: moving to HEAD~
+[33m927b592[m HEAD@{5}: reset: moving to HEAD~
+[33m2621643[m HEAD@{6}: commit: jgjjgj
+[33m927b592[m HEAD@{7}: reset: moving to HEAD~
+[33m257133d[m HEAD@{8}: reset: moving to HEAD~
+[33m5e80da9[m HEAD@{9}: reset: moving to HEAD~
+[33m702a232[m HEAD@{10}: reset: moving to HEAD~
+[33m26d66cb[m HEAD@{11}: commit: j
+[33m702a232[m HEAD@{12}: commit: gdfgf
+[33m5e80da9[m HEAD@{13}: commit: hhf
+[33m257133d[m HEAD@{14}: commit: jgjjgj
+[33m927b592[m HEAD@{15}: commit: dfgdfg
+[33mbe3a680[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{16}: pull --tags origin main: Fast-forward
+[33mffdf3de[m HEAD@{17}: commit: ghfhfh
+[33m0db1cff[m HEAD@{18}: commit (initial): fghh

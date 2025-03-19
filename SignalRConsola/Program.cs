@@ -7,11 +7,13 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
-
 using System.Text.RegularExpressions;
 using SignalRConsola;
 using Newtonsoft.Json;
-
+using SignalRConsola.modules.hash;
+using SignalRConsola.modules.settings;
+using SignalRConsola.modules.signalR;
+using ControlAccesoHuellaSol;
 class Program
 {
     private static PrinterService _printerService = new PrinterService();
@@ -19,40 +21,78 @@ class Program
     private static string _selectedConnectionId; // Variable para almacenar la ID de conexión seleccionada
     private static Regex connectionIdRegex = new Regex(@"^[a-zA-Z0-9]{20,}$"); // Expresión regular para validar ID de conexión
     private static string guid;
-
-    public static async Task Main(string[] args)
+    private static string logo = @"
++-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-+
++                                                                                                         +
++                                                                              .=##########*=             +
++                                                                            +#################:          +
++                                                                          .######+.############*         +
++      :+*+:   +#+                                 +*:  :----:            =######    ....:+#######:       +
++    =#*-:-==                                      *#:  ##+--=##+        .####*:             =####*       +
++    +#*.      =#-  =#######:  *#*####+  :#####*   *#:  ##.    ##        =####=----------.    :####-      +
++     -+*###+  =#- -#*    ##-  *#-   ##.      -##  *#:  ##-  :##+        *#################    *###+      +
++          +#+ =#- .#*    ##-  *#.   ##. =#+. -##  *#:  ##+=+##.         *################-    ####=      +
++    +######*  =#-   *##**##:  *#.   ##. =#*-=###  *#:  ##.   ##.        -###########         *####.      +
++                    .   .##                                              *#########        =#####=       +
++                   -#####*                                                #########*     +######*        +
++                                                                           -#########-     =##*:         +
++                                                                             -#########-     .           +
++                                                                                .=+*###*=                +
++                                                                                                         +
++-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-+";
+    static async Task Main(string[] args)
     {
 
-        while (true)
+        //HuellaManager huellaManager = new HuellaManager();
+      
+
+        bool continuar = true;
+        while (continuar)
         {
             Console.Clear();
-            Console.WriteLine("Seleccione una opción para conectarse:");
-            Console.WriteLine("1. Usuario y Contraseña");
-            Console.WriteLine("2. Autenticarse con Google");
+            
+            Utilidades.CenterText(logo);
 
-            var opcion = Console.ReadKey().KeyChar;
-            Console.Clear();
+            Console.WriteLine(" ");
+            Utilidades.CenterText(" Menu Principal ");
+            Console.WriteLine(" ");
+            Console.WriteLine("1. Conectarse A SingalR");
+            Console.WriteLine("2. Probar Lector De Huellas");
+            Console.WriteLine("3. Configuracion");
+            Console.WriteLine("0. Salir");
+            Console.Write("Seleccione una opción: ");
+
+            string opcion = Console.ReadLine();
 
             switch (opcion)
             {
-                case '1':
-                    await AutenticacionUsuarioYContrasena();
+                case "3":
+                    var module = new Settings();
+                    module.Ejecutar();
                     break;
-
-                case '2':
-                    Console.WriteLine("Aun no Disponible.");
-                    Console.WriteLine("Presione cualquier tecla para volver al menú principal...");
-                    Console.ReadKey();
+                case "2":
+                    var hash = new Hash();
+                    hash.Ejecutar();
                     break;
-
+                case "1":
+                    var signalR = new SignalR();
+                    signalR.Ejecutar();
+                    break;
+                case "0":
+                    continuar = false;
+                    break;
+                case "N":
+                    await Negociacion();
+                    break;
                 default:
-                    Console.WriteLine("Opción no válida. Presione cualquier tecla para volver al menú principal...");
+                    Console.WriteLine("Opción no válida. Intente de nuevo.");
                     Console.ReadKey();
                     break;
             }
         }
-
     }
+
+
     private static async Task AutenticacionUsuarioYContrasena()
     {
         Console.Write("Ingrese su usuario: ");
@@ -90,7 +130,8 @@ class Program
     }
     public static async Task Negociacion()
     {
-        var appSettings = ReadAppSettings("./appsettings.json");
+        var setting = new Settings();
+        var appSettings = setting.ReadAppSettings();
         guid = appSettings.ApplicationSettings.GUID;
         _selectedConnectionId = appSettings.ApplicationSettings.GUIDD;
 
@@ -141,7 +182,7 @@ class Program
                         Console.WriteLine("Datos de impresión no válidos.");
                         return;
                     }
-                    Printers pdfPrinter = new Printers();
+                    PrinterService pdfPrinter = new PrinterService();
                     if (pdfPrinter.PrintToPDF(datosImprimir, printerName))
                     {
                         mensajeJson = misFunciones.Mensajes.GenerateMessaje("Documento PDF impreso.");
@@ -170,12 +211,7 @@ class Program
             await Task.Delay(1000);
         }
     }
-    static AppSettings ReadAppSettings(string filePath)
-    {
-        var json = File.ReadAllText(filePath);
 
-        return System.Text.Json.JsonSerializer.Deserialize<AppSettings>(json);
-    }
     static async Task HandleConsoleInput()
     {
         while (true)
