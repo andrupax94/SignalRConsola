@@ -1,2 +1,56 @@
 SignalRConsola/bin/Debug/net8.0/runtimes/win-x86/native/libcef.dll
 SignalRConsola/bin/Debug/net8.0/runtimes/win-x64/native/libcef.dll
+# Visual Studio
+.vs/
+.vscode/
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+logs/
+
+# NuGet packages
+packages/
+!packages/**/*.md
+
+# Environment files
+.env
+
+# Rider & JetBrains Rider
+.idea/
+*.sln.iml
+
+# .NET Core
+project.lock.json
+project.assets.json
+artifacts/
+
+# Debug & Release
+Debug/
+Release/
+
+# Publish output
+publish/
+
+# Resharper
+*.DotSettings.user
+
+# ASP.NET specific
+appsettings*.json
+
+# Coverage & test results
+TestResults/
+coverage/
+coverage.info
+*.coverage
+*.coveragexml
+
+**/libcef.dll
