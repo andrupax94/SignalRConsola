@@ -8,11 +8,7 @@
     <ProjectGuid>{b3088804-e694-4a45-bf1f-895ae146ea33}</ProjectGuid>
   </PropertyGroup>
 
- 
 
-  
-
- 
   <ItemGroup>
     <PackageReference Include="ControlAccesoHuellaSol" Version="1.0.0" />
     <PackageReference Include="IronPdf" Version="2025.3.6" />
@@ -34,9 +30,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DatosConexion\DatosConexionHaendel.csproj" />
+  </ItemGroup>
+
+ 
+
+  <ItemGroup>
     <Reference Include="misFunciones">
       <HintPath>..\misFunciones\misFunciones\bin\Debug\net8.0\misFunciones.dll</HintPath>
     </Reference>
+   
   </ItemGroup>
-
+  <ItemGroup>
+    <Reference Include="DatosConexion">
+      <HintPath>..\DatosConexion\bin\Debug\net8.0\DatosConexionHaendel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ControlAccesoHuellaSol">
+      <HintPath>..\ControlAccesoHuellaSol\bin\Debug\net8.0\DatosConexionHaendel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

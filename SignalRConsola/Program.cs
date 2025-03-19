@@ -14,8 +14,11 @@ using SignalRConsola.modules.hash;
 using SignalRConsola.modules.settings;
 using SignalRConsola.modules.signalR;
 using ControlAccesoHuellaSol;
+using Datos = DatosConexionHaendel.LocalizacionService;
 class Program
 {
+
+
     private static PrinterService _printerService = new PrinterService();
     private static HubConnection _connection;
     private static string _selectedConnectionId; // Variable para almacenar la ID de conexión seleccionada
@@ -44,13 +47,13 @@ class Program
     {
 
         //HuellaManager huellaManager = new HuellaManager();
-      
 
+        Datos.Instance.CambiarIdioma("es-ES");
         bool continuar = true;
         while (continuar)
         {
             Console.Clear();
-            
+
             Utilidades.CenterText(logo);
 
             Console.WriteLine(" ");
